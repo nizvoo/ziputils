@@ -1,0 +1,6 @@
+LIBRARY  "ZipUtils.dll"
+
+EXPORTS
+  CompressFile          @1
+  CompressFolder        @2
+  UnCompressFile        @3

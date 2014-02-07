@@ -1,0 +1,16 @@
+CC  = cl
+RM  = del
+CFLAG = /D_UNICODE /DUNICODE
+
+BIN = ../../bin/release/ZipUtils.exe
+
+SRC =  ZipUtilsSetup.c ZipUtilsApp.c
+INC =  ZipUtilsSetup.h
+$(BIN): $(SRC) $(INC)
+	$(CC) $(SRC) /Fe$(BIN) $(CFLAG)
+	
+PHTHOY: clean
+
+clean:
+	$(RM) *.obj
+	$(RM) $(BIN)
